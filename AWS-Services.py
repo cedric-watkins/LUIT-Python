@@ -22,4 +22,5 @@ print(" Your list consist of:\n" , len(services), " AWS Services")
 print("")
 
 num = random.ranint(0,len(services))
+print(num)
 
