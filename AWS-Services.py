@@ -4,8 +4,7 @@ import random
 
 #Environment Variables
 services = []
-service = []
-num = 0 #Number of service given
+num = 0 #Number of Service being given
 
 print("!!!LET'S PLAY A GAME!!! \n???Can you name (5) AWS Services??? \n\n!!!Let's build a list and make a game of it!!!")
 
@@ -34,7 +33,6 @@ item1 = services.pop(num1)
 item2 = services.pop(num2)
 
 rm_items = []
-
 rm_items.append(item1)
 rm_items.append(item2)
 
@@ -48,13 +46,7 @@ for i in range(0, 1):
 #Print remaining results
 print("Woah how did these 2 get here lol: \n", rm_items)
 print("How'd you do?")
-print("")
-
-print("These are your new list details take a look below:")
-
+print("\nThese are your new list details take a look below:")
 print("Your new list consist of: ", services)
-print("")
-
-print("Leaving", len(services), "remaining services")
-
+print("\nLeaving", len(services), "remaining services")
 print("!!!Thanks for playing, Have a nice day!!!")
