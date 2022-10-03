@@ -13,34 +13,38 @@ N = 15 #number of characters to generate for instance id
 while True:
     if department == "acct":
         print("Accounting")
-        instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
         instances = int(input("\nHow many instances are you looking to run? "))
         print("")
         print("Your department EC2 names are:")
+        
         for i in range(0, instances):
+                instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
                 print(department + "-" + str(instance_id))
+                
         break
     
     elif department == "mark":
         print("Marketing")
-        instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
         instances = int(input("\nHow many instances are you looking to run? "))
         print("")
         print("Your department EC2 names are:")
+        
         for i in range(0, instances):
+                instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
                 print(department + "-" + str(instance_id))
         break
     
     elif department == "fin":
         print("FinOps")
-        instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
         instances = int(input("\nHow many instances are you looking to run? "))
         print("")
         print("Your department EC2 names are:")
+        
         for i in range(0, instances):
+                instance_id = ''.join(random.choices(string.ascii_lowercase +  string.digits, k = N))
                 print(department + "-" + str(instance_id))
         break
     
     else:
-        print("\nEither Department does not exist or Invalid input.")
-        break
+        print("\nInvalid input")
+    break
